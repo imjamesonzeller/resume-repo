@@ -93,10 +93,11 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
+  \vspace{-5pt}
 \item
   \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
     \small#1 & \textbf{\small #2}\\
-  \end{tabular*}\vspace{-7pt}
+  \end{tabular*}\vspace{-20pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -149,23 +150,29 @@
 \section{Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Hudl}{May 2026 -- Aug. 2026}
+{Hudl}{May 2026 -- Present}
 {Software Engineering Intern}{Lincoln, NE}
 \resumeItemListStart
+% TODO: Update this line with real work that I do at Hudl
 \resumeItem{Anticipated work in C\#, .NET, and React, working in their Youth, Club, and High School product area.}
+\resumeItemListEnd
+\resumeSubheading
+{Fusion Plane}{April 2026 -- Present}
+{Software Engineer}{Remote}
+\resumeItemListStart
+\resumeItem{Building \textbf{Fusion Plane}, a public AI microservice with a \textbf{C\# .NET} backend and \textbf{TypeScript React} frontend, where organizations can manage users and role-based access, version prompts, and call prompts with dynamic inputs through both synchronous and asynchronous APIs.}
+\resumeItem{Built an admin portal so teams can log in and manage organizations, users, prompt versions, and integrations through a GUI instead of manual config.}
 \resumeItemListEnd
 
 \resumeSubheading
-{AthXcel (acquired by Optima Sports Group - Jan. 2026)}{May 2025 -- Present}
-{Product Engineer}{Remote / Round Lake, IL}
+{AthXcel}{May 2025 -- April 2026}
+{Software Engineering Intern}{Remote}
 \resumeItemListStart
-\resumeItem{Built and shipped an AI assistant platform with a \textbf{C\# .NET} backend and \textbf{TypeScript React} frontend to support athlete and coach workflows inside the product.}
-\resumeItem{Created a public AI microservice where organizations can manage users and role-based access, version prompts, and call prompts with dynamic inputs through both synchronous and asynchronous APIs.}
-\resumeItem{Built an admin portal so teams can log in and manage organizations, users, prompt versions, and integrations through a GUI instead of manual config.}
 \resumeItem{Designed the end-to-end video analysis system architecture, including queues, hosting, frame extraction, and tagging pipeline, with \textbf{Azure}, so footage could be processed with LLMs before native video API support existed.}
-\resumeItem{Improved prompt design and execution patterns, reducing \textbf{OpenAI} token usage by \textbf{25\%+} and lowering API costs.}
+\resumeItem{Built and shipped an AI assistant platform with a \textbf{C\# .NET} backend and \textbf{TypeScript React} frontend to support athlete and coach workflows inside the product.}
 \resumeItemListEnd
 
+%  TODO: Probably remove
 \resumeSubheading
 {Siebel School of Computing and Data Science}{Jan. 2025 -- Dec. 2025}
 {CS 124 Tutor (\textbf{Java} / \textbf{Kotlin})}{Champaign, IL}
@@ -187,6 +194,7 @@
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
+% TODO: Figure out why this has such weird fucking spacing
 \section{Projects}
 \resumeSubHeadingListStart
 
@@ -202,7 +210,6 @@
 \resumeItemListStart
 \resumeItem{Developed a suite of APIs in \textbf{Kotlin (Spring Boot)} and \textbf{Python (Flask)} for productivity and hobby projects.}
 \resumeItem{Containerized services with \textbf{Docker}, deployed to a self-hosted \textbf{TrueNAS} server, and exposed securely through \textbf{Cloudflare Tunnels}.}
-\resumeItem{Applied best practices including idempotent design, OAuth/Keychain security, quota management, and unit tests with JUnit \& MockMvc.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -212,8 +219,8 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{
     \item{
-        \textbf{Languages}{: Kotlin/Java, C\#, Python, C++, TypeScript, Go, SQL} \\
-        \textbf{Frameworks \& Libraries}{: Spring Boot, .NET, React, Flask, Wails, JUnit, MockMvc} \\
+        \textbf{Languages}{: Java/TypeScript, Kotlin/Java, C\#, Python, C++, Go, SQL} \\
+        \textbf{Frameworks \& Libraries}{: React, React Native, Spring Boot, .NET, Flask, Wails, JUnit, MockMvc} \\
         \textbf{Tools \& Platforms}{: Azure, AWS, Docker, SQL Server, Git, Cloudflare, OpenAI API, OAuth, Jira} \\
     }}
 \end{itemize}

@@ -24,7 +24,6 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
-
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -35,7 +34,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -67,37 +65,38 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+\item\small{
     {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
+\item\small{
+    {#1 #2 #3 #4 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \vspace{-2pt}
+\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+\item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}\\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -105,10 +104,14 @@
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.0in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,24 +120,24 @@
 
 %----------HEADING----------
 \begin{center}
-    {\Huge \scshape Jameson Zeller} \\ \vspace{1pt}
-    Round Lake, Illinois \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 773-647-7679 ~ \href{mailto:jz@jamesonzeller.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{jz@jamesonzeller.com}} ~ 
-    \href{https://linkedin.com/in/jameson-zeller/}{\raisebox{-0.2\height}\faGlobe\ \underline{jamesonzeller.com}}  ~
-    \href{https://github.com/imjamesonzeller}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/imjamesonzeller}}
-    \vspace{-8pt}
+  {\Huge \scshape Jameson Zeller} \\ \vspace{1pt}
+  Round Lake, Illinois \\ \vspace{1pt}
+  \small \raisebox{-0.1\height}\faPhone\ 773-647-7679 ~ \href{mailto:jz@jamesonzeller.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{jz@jamesonzeller.com}} ~
+  \href{https://linkedin.com/in/jameson-zeller/}{\raisebox{-0.2\height}\faGlobe\ \underline{jamesonzeller.com}}  ~
+  \href{https://github.com/imjamesonzeller}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/imjamesonzeller}}
+  \vspace{-8pt}
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Illinois at Urbana-Champaign}{Aug. 2024 -- May 2028}
-      {Bachelor of Science in Mathematics \& Computer Science; Minor in Business}{Champaign, Illinois}
-      \resumeItemListStart
-        \resumeItem{\textbf{3.87 GPA}; Elsie Thomas Fraser Award Winner; Dean's List; Habitat for Humanity}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Illinois at Urbana-Champaign}{Aug. 2024 -- May 2028}
+{Bachelor of Science in Mathematics \& Computer Science; Minor in Business}{Champaign, Illinois}
+\resumeItemListStart
+\resumeItem{\textbf{3.89 GPA}; Elsie Thomas Fraser Award Winner; Dean's List; Habitat for Humanity}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------RELEVANT COURSEWORK-----------
 % \section{Relevant Coursework}
@@ -145,73 +148,74 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
-    \resumeSubheading
-  {Hudl}{May 2026 -- Aug. 2026}
-  {Software Engineering Intern}{Lincoln, NE}
-  \resumeItemListStart
-    \resumeItem{Anticipated work in C\#, .NET, and React, working in their Youth, Club, and High School product area.}
-  \resumeItemListEnd
+\resumeSubheading
+{Hudl}{May 2026 -- Aug. 2026}
+{Software Engineering Intern}{Lincoln, NE}
+\resumeItemListStart
+\resumeItem{Anticipated work in C\#, .NET, and React, working in their Youth, Club, and High School product area.}
+\resumeItemListEnd
 
-  \resumeSubheading
-    {AthXcel (acquired by Optima Sports Group - Jan. 2026)}{May 2025 -- Present}
-    {Product Engineer}{Remote / Round Lake, IL}
-    \resumeItemListStart
-      \resumeItem{Built and shipped an AI assistant platform with a \textbf{C\# .NET} backend and \textbf{TypeScript React} frontend to support athlete and coach workflows inside the product.}
-      \resumeItem{Created a public AI microservice where organizations can manage users and role-based access, version prompts, and call prompts with dynamic inputs through both synchronous and asynchronous APIs.}
-      \resumeItem{Built an admin portal so teams can log in and manage organizations, users, prompt versions, and integrations through a GUI instead of manual config.}
-      \resumeItem{Designed the end-to-end video analysis system architecture, including queues, hosting, frame extraction, and tagging pipeline, with \textbf{Azure}, so footage could be processed with LLMs before native video API support existed.}
-      \resumeItem{Improved prompt design and execution patterns, reducing \textbf{OpenAI} token usage by \textbf{25\%+} and lowering API costs.}
-    \resumeItemListEnd
+\resumeSubheading
+{AthXcel (acquired by Optima Sports Group - Jan. 2026)}{May 2025 -- Present}
+{Product Engineer}{Remote / Round Lake, IL}
+\resumeItemListStart
+\resumeItem{Built and shipped an AI assistant platform with a \textbf{C\# .NET} backend and \textbf{TypeScript React} frontend to support athlete and coach workflows inside the product.}
+\resumeItem{Created a public AI microservice where organizations can manage users and role-based access, version prompts, and call prompts with dynamic inputs through both synchronous and asynchronous APIs.}
+\resumeItem{Built an admin portal so teams can log in and manage organizations, users, prompt versions, and integrations through a GUI instead of manual config.}
+\resumeItem{Designed the end-to-end video analysis system architecture, including queues, hosting, frame extraction, and tagging pipeline, with \textbf{Azure}, so footage could be processed with LLMs before native video API support existed.}
+\resumeItem{Improved prompt design and execution patterns, reducing \textbf{OpenAI} token usage by \textbf{25\%+} and lowering API costs.}
+\resumeItemListEnd
 
-  \resumeSubheading
-    {Siebel School of Computing and Data Science}{Jan. 2025 -- Dec. 2025}
-    {CS 124 Tutor (\textbf{Java} / \textbf{Kotlin})}{Champaign, IL}
-    \resumeItemListStart
-      \resumeItem{Mentored students in UIUC's CS 124 programming course, simplifying complex design and debugging concepts to build students' technical confidence.}
-    \resumeItemListEnd
+\resumeSubheading
+{Siebel School of Computing and Data Science}{Jan. 2025 -- Dec. 2025}
+{CS 124 Tutor (\textbf{Java} / \textbf{Kotlin})}{Champaign, IL}
+\resumeItemListStart
+\resumeItem{Mentored students in UIUC's CS 124 programming course, simplifying complex design and debugging concepts to build students' technical confidence.}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 %-----------LEADERSHIP / EXTRACURRICULAR-----------
 \section{Leadership}
 \resumeSubHeadingListStart
-  \resumeSubheading
-    {Habitat for Humanity (UIUC Chapter)}{Aug. 2025 -- Present}
-    {Education Committee Chair}{Champaign, IL}
-    \resumeItemListStart
-      \resumeItem{Participate in committee meetings to plan and execute events raising student awareness of homelessness, driving educational outreach across the UIUC campus community.}
-    \resumeItemListEnd
+\resumeSubheading
+{Habitat for Humanity (UIUC Chapter)}{Aug. 2025 -- Present}
+{Education Committee Chair}{Champaign, IL}
+\resumeItemListStart
+\resumeItem{Participate in committee meetings to plan and execute events raising student awareness of homelessness, driving educational outreach across the UIUC campus community.}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
 
-  \resumeProjectHeading
-  {\textbf{\href{https://github.com/imjamesonzeller/tasklight-v3}{Tasklight}} \emph{(macOS Productivity App)}}{2025}  \resumeItemListStart
-    \resumeItem{Developed a Spotlight-style task capture app using \textbf{Go} and \textbf{React} (Wails) to instantly log tasks to Notion.}
-    \resumeItem{Built a companion API service in \textbf{Spring Boot} that proxies requests to \textbf{OpenAI}, letting users either supply their own API key or use a quota-limited shared key managed by me.}
-    \resumeItem{Integrated Notion OAuth, Apple Keychain token storage, global keyboard shortcuts, and \textbf{OpenAI}-powered NLP.}
-  \resumeItemListEnd
+\resumeProjectHeading
+{\textbf{\href{https://github.com/imjamesonzeller/tasklight-v3}{Tasklight}} \emph{(macOS Productivity App)}}{2025}  \resumeItemListStart
+\resumeItem{Developed a Spotlight-style task capture app using \textbf{Go} and \textbf{React} (Wails) to instantly log tasks to Notion.}
+\resumeItem{Built a companion API service in \textbf{Spring Boot} that proxies requests to \textbf{OpenAI}, letting users either supply their own API key or use a quota-limited shared key managed by me.}
+\resumeItem{Integrated Notion OAuth, Apple Keychain token storage, global keyboard shortcuts, and \textbf{OpenAI}-powered NLP.}
+\resumeItemListEnd
 
-  \resumeProjectHeading
-  {\textbf{\href{https://github.com/imjamesonzeller/api}{Self-Hosted APIs}} \emph{(Spring Boot \& Flask Services)}}{2025}
-  \resumeItemListStart
-    \resumeItem{Developed a suite of APIs in \textbf{Kotlin (Spring Boot)} and \textbf{Python (Flask)} for productivity and hobby projects.}
-    \resumeItem{Containerized services with \textbf{Docker}, deployed to a self-hosted \textbf{TrueNAS} server, and exposed securely through \textbf{Cloudflare Tunnels}.}
-    \resumeItem{Applied best practices including idempotent design, OAuth/Keychain security, quota management, and unit tests with JUnit \& MockMvc.}
-  \resumeItemListEnd
+\resumeProjectHeading
+{\textbf{\href{https://github.com/imjamesonzeller/api}{Self-Hosted APIs}} \emph{(Spring Boot \& Flask Services)}}{2025}
+\resumeItemListStart
+\resumeItem{Developed a suite of APIs in \textbf{Kotlin (Spring Boot)} and \textbf{Python (Flask)} for productivity and hobby projects.}
+\resumeItem{Containerized services with \textbf{Docker}, deployed to a self-hosted \textbf{TrueNAS} server, and exposed securely through \textbf{Cloudflare Tunnels}.}
+\resumeItem{Applied best practices including idempotent design, OAuth/Keychain security, quota management, and unit tests with JUnit \& MockMvc.}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    \textbf{Languages}{: Kotlin/Java, C\#, Python, C++, TypeScript, Go, SQL} \\
-    \textbf{Frameworks \& Libraries}{: Spring Boot, .NET, React, Flask, Wails, JUnit, MockMvc} \\
-    \textbf{Tools \& Platforms}{: Azure, AWS, Docker, SQL Server, Git, Cloudflare, OpenAI API, OAuth, Jira} \\
-  }}
+    \small{
+    \item{
+        \textbf{Languages}{: Kotlin/Java, C\#, Python, C++, TypeScript, Go, SQL} \\
+        \textbf{Frameworks \& Libraries}{: Spring Boot, .NET, React, Flask, Wails, JUnit, MockMvc} \\
+        \textbf{Tools \& Platforms}{: Azure, AWS, Docker, SQL Server, Git, Cloudflare, OpenAI API, OAuth, Jira} \\
+    }}
 \end{itemize}
 
 \end{document}
